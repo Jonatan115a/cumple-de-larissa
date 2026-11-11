@@ -1,0 +1,93 @@
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0 auto; 
+	position: absolute;
+	font: 40px Verdana;
+	color: #d11d1d;
+	height: 30px;
+	width: 100%; 
+	top: calc(90% - 12.5px); 
+	left: 0; 
+	right: 0;
+	text-align: center; 
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #e46e6e;
+	font: 40px
+}
+span {
+	font-size: 40px;
+}
+p > a:first-of-type {
+	font-size: 300px;
+
+}
+body {
+	overflow: hidden;
+}
+/* Botones principales */
+#musicButton,
+#dedicationButton {
+    position: absolute;
+    padding: 10px 18px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #d946a5, #8736a8);
+    box-shadow: 0 4px 15px rgba(217, 70, 165, 0.35);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* Botón de música */
+#musicButton {
+    top: 20px;
+    left: 20px;
+}
+
+/* Botón de dedicatoria */
+#dedicationButton {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Efecto al pasar el cursor */
+#musicButton:hover,
+#dedicationButton:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #f06bbd, #a64ac5);
+    box-shadow: 0 6px 20px rgba(217, 70, 165, 0.55);
+}
+
+/* Efecto al presionar */
+#musicButton:active {
+    transform: scale(0.95);
+}
+
+#dedicationButton:active {
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+  #dedicationMessage {
+	position: absolute;
+	top: 20%;  /* Cambia este valor para mover la dedicatoria hacia arriba o abajo */
+	left: 50%;  /* Cambia este valor para mover la dedicatoria hacia la izquierda o derecha */
+	transform: translateX(-50%); /* Esto centra la dedicatoria */
+	font-size: 40px;
+	color: #f4a261;  /* Cambia el color de la dedicatoria */
+	text-align: center;
+	display: none;
+
+  }
